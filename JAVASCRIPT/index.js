@@ -155,16 +155,35 @@ function getStars(rating) {
 
 
 
-// js for searching
+// js to show search input
 function toggleSearch() {
   const searchBox = document.getElementById("searchBox");
   searchBox.style.display = searchBox.style.display === "block" ? "none" : "block";
 }
 
- // Function to filter products based on search input
- function searchProducts() {
-  var input, filter, productItems, title, i, txtValue;
-  input = document.getElementById("searchInput");
+
+// search garni function
+function searchProducts(event) {
+  event.preventDefault(); // Prevent form submission if triggered by a button
+  let input, filter, productItems, title, i, txtValue;
+
+  // Get the input element, depending on the event target
+  if (event.target.tagName === "BUTTON") {
+    // If the event is triggered by a button, find the related input
+    input = event.target
+      .closest("form")
+      .querySelector(".searchInput");
+  } else if (event.target.tagName === "INPUT") {
+    // If triggered by the input itself
+    input = event.target;
+  }
+
+  if (!input) {
+    console.error("Input element not found!");
+    return;
+  }
+
+  // Perform the filtering
   filter = input.value.toUpperCase();
   productItems = document.getElementsByClassName("product-item");
 
@@ -179,6 +198,7 @@ function toggleSearch() {
     }
   }
 }
+
 
 
 

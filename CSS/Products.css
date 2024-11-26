@@ -20,25 +20,73 @@
 
 .navbar {
   /* border: 1px solid red; */
-  background-color: white;
-  /* box-shadow: 0 2px 10px rgba(8, 44, 8, 0.1); 
-  position: sticky;
-  top:0; */
+  background-color:white;
+  position:sticky; 
+  top: 0; 
+  z-index: 1000;
+   width:100%;
+    left: 0;
+     height: 7rem;
+      transition: 0.6s;
+  /* /* box-shadow: 0 2px 10px rgba(8, 44, 8, 0.1);  */
+  
 
 }
 
+.nav-link:hover{
+  color: green;
+}
+
+
+.nav-link.active {
+  color: #6a5acd; /* Soft pastel purple */
+  background: linear-gradient(to right, #eafaf1, #d4edda); 
+  font-weight: bold;
+  border-radius: 30px; /* Smooth pill shape */
+  padding: 8px 15px; /* Generous padding for a button-like feel */
+  text-decoration: none; /* Remove underline */
+  box-shadow: 0 3px 5px rgba(46, 139, 87, 0.2); /* Subtle shadow */
+  transition: all 0.4s ease; /* Smooth transitions */
+}
+
+
+.nav-link.active:hover {
+  background: linear-gradient(to right, #d4edda, #eafaf1);
+  color:green; /* Darker pastel purple on hover */
+  box-shadow: 0 6px 10px rgba(106, 90, 205, 0.3); /* Enhanced shadow */
+  transform: scale(1.1); /* Slight zoom effect */
+}
+
+.nav-link.active::after {
+  content: '🌱'; /* Add a floral emoji for a soft, aesthetic touch */
+  display: inline-block;
+  margin-left: 8px;
+  font-size: 1.2rem;
+  transition: transform 0.4s ease;
+}
+
+.nav-link.active:hover::after {
+  transform: rotate(90deg); /* Spin the emoji on hover */
+}
+
+
+
+
 .container {
   /* border: 1px solid red; */
+  transition: 0.6s;
 }
 
 .navbar-brand {
   /* border: 1px solid red; */
+  transition: 0.6s;
 }
 
 
 .logo {
   height: 100px;
   width: 100%;
+  transition: 0.6s;
   /* border: 1px solid red; */
 }
 
@@ -50,28 +98,33 @@
 .navbar-toggler-icon {
   /* border: 1px solid red; */
   font-size: 1.3rem;
+  transition: 0.6s;
 
 
 }
 
 .navbar-collapse {
   /* border: 1px solid red; */
+  
 
 }
 
 .navbar-nav {
   /* border: 1px solid red; */
   margin-left: 5rem;
+  
 }
 
 .nav-item {
   /* border: 1px solid red; */
   padding-left: 1.5rem;
+  transition: 0.6s;
 }
 
 .nav-button {
-  
+
 }
+
 
 .search-container {
   position: relative;
@@ -146,7 +199,7 @@
 }
 
 .products-bg {
-  border: 2px solid red;
+  /* border: 2px solid red; */
   margin-top: 9rem;     
 }
 

@@ -12,62 +12,62 @@
 
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg border-0">
+  <nav class="navbar navbar-expand-lg border-0" >
 
-      <div class="container">
+    <div class="container">
 
-        <a class="navbar-brand" href="#"><img src="../images/logo.png" class="logo"></a>
+      <a class="navbar-brand" href="#"><img src="../images/logo.png" class="logo"></a>
 
-        <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon "></span>
-        </button>
+      <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon "></span>
+      </button>
 
-        <div class="collapse  navbar-collapse  " id="navbarSupportedContent">
+      <div class="collapse  navbar-collapse  " id="navbarSupportedContent">
 
-          <ul class="navbar-nav  me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="../HTML/homepage.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="../HTML/Products.html">Products</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contactus">Contact us</a>
-            </li>
-          </ul>
+        <ul class="navbar-nav  me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="../HTML/homepage.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="../HTML/Products.html">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contactus">Contact us</a>
+          </li>
+        </ul>
 
 
-          <form class="d-flex  nav-button search-container" role="search">
-            <!-- <div class="d-flex align-items-center justify-content-center nav-button"> -->
-            <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
-            <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
-            <div class="search-box" id="searchBox">
-              <input
-                id="searchInput"
-                class="form-control"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-                onkeyup="searchProducts()"
-              />
-            </div>
-            <button
-              type="button"
-              class="icon-button"
-              onclick="toggleSearch()"
-            >
-              <i data-feather="search"></i>
-            </button>
-            <button class="icon-button "><i data-feather="user"></i></button>
-            <button class="icon-button "><i data-feather="shopping-cart"></i></button>
-          </form>
+        <div class="d-flex  nav-button search-container" role="search">          
+         <div class="search-box" id="searchBox">
+            <input
+              id="searchInput"
+              class="form-control"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+              onkeyup="searchProducts(event)"/>
+          </div>
+          <button
+            type="button"
+            class="icon-button"
+            onclick="toggleSearch()"
+          >
+            <i data-feather="search"></i>
+          </button>
+
+          <a href="../HTML/login.html" ><button class="icon-button "><i data-feather="user"></i></button></a>
+
+          <a href="../HTML/Cart.html" >
+          <button class="icon-button " ><i data-feather="shopping-cart"></i></button>
+        </a>
         </div>
       </div>
-    </nav>
+    </div>
+  </nav>
 
     <div class="plant-products" >
     <h1 class="heading " style="text-align:center;margin-top: 3rem;">Our products</h1>
@@ -96,8 +96,8 @@
 
       <!-- Search Form -->
       <form class="d-flex " role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" onkeyup="searchProducts(event)">
+        <button class="btn btn-outline-success" type="submit" onclick="searchProducts(event)"">
           <i class="bi bi-search"></i>
         </button>
       </form>
