@@ -165,6 +165,22 @@
 
 }
 
+.cart-number{
+  display:flex; 
+  justify-content: center;
+   align-items: center; 
+   position: absolute;
+    width:1.2rem;
+     height:1.2rem; 
+     background-color: red; 
+     color: white;
+      border-radius: 50%;
+       font-size: 0.8rem; 
+       top: 50%;
+       right: -20px;
+}
+
+
 /* navigation down */
 .left-leaf {
   width: 100%;
