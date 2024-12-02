@@ -20,7 +20,7 @@ function addToCart(productId)
  localStorage.setItem("cart", JSON.stringify(cart));
 
  updateCartNumber();
- alert('item is added');
+//  alert('item is added');
 }
 
 

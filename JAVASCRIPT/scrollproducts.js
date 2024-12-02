@@ -1,6 +1,6 @@
 
   // JavaScript for automatic scrolling
-  const scrollContainer = document.querySelector('.scroll-container');
+  // const scrollContainer = document.querySelector('.scroll-container');
     let scrollAmount = 0;
 
     function autoScroll() {

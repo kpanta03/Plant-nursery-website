@@ -62,6 +62,8 @@ function updateQuantity(index, change) {
     } else {
         alert("Quantity cannot be less than 1.");
     }
+
+    updateCartNumber();
 }
 
 
@@ -76,6 +78,7 @@ function changeQuantity(index, value) {
     } else {
         alert("Quantity must be a positive number.");
     }
+    updateCartNumber();
 }
 
 
@@ -86,6 +89,7 @@ function removeItem(index) {
     localStorage.setItem("cart", JSON.stringify(cart)); // Update localStorage
     renderCart(); // Re-render the cart
     // window.location.reload();
+    updateCartNumber();
 }
 
 

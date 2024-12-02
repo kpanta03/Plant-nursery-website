@@ -129,6 +129,9 @@ const items = [
   const cartIconNumber = document.getElementsByClassName('cart-number');
 
 
+  const scrollContainer = document.querySelector('.scroll-container')
+
+
 
     
 
