@@ -129,7 +129,24 @@ const items = [
   const cartIconNumber = document.getElementsByClassName('cart-number');
 
 
-  const scrollContainer = document.querySelector('.scroll-container')
+  const scrollContainer = document.querySelector('.scroll-container');
+
+
+  document.addEventListener("scroll", () => {
+    const navbar = document.querySelector(".navbar");
+    const page2 = document.querySelector(".page2");
+
+    if (page2) {
+        const page2Top = page2.offsetTop;
+
+        if (window.scrollY >= page2Top) {
+            navbar.classList.add("navbar-white");
+        } else {
+            navbar.classList.remove("navbar-white");
+        }
+    }
+});
+
 
 
 

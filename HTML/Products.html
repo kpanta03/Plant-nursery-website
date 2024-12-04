@@ -9,12 +9,12 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
   <script src="https://unpkg.com/feather-icons"></script>
-  <link rel="stylesheet" href="../CSS/Products.css">
+  <link rel="stylesheet" href="../CSS/homepage.css">
 
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg border-0">
+  <nav class="navbar navbar-expand-lg border-0 bg-white"  >
 
     <div class="container">
 
@@ -95,7 +95,7 @@
 
       <!-- Search Form -->
       <form class="d-flex " role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
+        <input class="form-control me-2 btn-outline-success" type="search" placeholder="Search" aria-label="Search"
           onkeyup="searchProducts(event)">
         <button class="btn btn-outline-success" type="submit" onclick="searchProducts(event)">
           <i class=" bi bi-search"></i>
@@ -106,7 +106,7 @@
 
 
 
-    <div class="products-bg">
+    <div class="products-bg" style="background-color:  #D8E9D3;">
       <div class="products container">
         <div class="row products-row">
           <!-- all items will be here -->
@@ -126,68 +126,61 @@
   </div>
 
 
+  <!-- page5 -->
 
-  <div class="page5" id="contactus" style=" margin-top: 3rem;padding-left: 3rem;">
+  <div class="page5" id="contactus">
     <div class="container-fluid">
-
-      <div class="row" style=" margin-top: 2rem;padding-top: 1rem;">
-
+  
+      <div class="row">
+  
         <div class="col-11 col-lg-7" style="padding:1rem;">
           <h5>GET IN TOUCH</h5>
           <P style="color: grey;">send us a message, we will call back later</P>
-
-          <form class="row g-3 needs-validation" style=" margin-top:-1rem; ">
+  
+          <form class="row g-3 needs-validation" style=" margin-top:-1rem; " action="../contact.php" method="POST" >   
             <div class=" form-floating  col-md-6" style="height:3rem;">
-              <input type="text" class="form-control" id="inputName" placeholder="Name" required
-                style="border: 1px solid black;">
+              <input type="text" class="form-control" id="inputName" name="name" placeholder="Name" required >
               <label for="inputName ">Name</label>
-
+         
             </div>
-
+      
             <div class=" form-floating col-md-6">
-
-              <input type="email" class="form-control" id="inputEmail4" placeholder="Email" required
-                style="border: 1px solid black;">
+             
+              <input type="email" class="form-control" id="inputEmail4" name="email" placeholder="Email" required >
               <label for="inputEmail4">Email</label>
             </div>
-
-
-            <div class=" form-floating  col-12">
-              <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St"
-                style="border: 1px solid black;">
+      
+            
+            <div class=" form-floating  col-12" >
+              <input type="text" class="form-control" id="inputAddress" name="address" placeholder="1234 Main St">
               <label for="inputAddress">Address</label>
             </div>
-
-
+      
+      
             <div class=" col-12 form-floating">
-              <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"
-                style="border: 1px solid black;"></textarea>
+              <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"  name="comment" ></textarea>
               <label for="floatingTextarea">Comments</label>
             </div>
-
-
+            
+           
             <div class="col-12">
-              <button type="submit" class="btn btn-success">Send Message</button>
+              <button type="submit" class="btn btn-success" name="submit">Send Message</button>
             </div>
           </form>
-
-
-
-
         </div>
-
+  
         <div class="col-5 d-none d-lg-flex">
-          <img src="../images/page5.png" alt=".." class="img-fluid" style="width: 100%; margin-left: 0.7rem;">
+             <img src="../images/page5.png" alt=".." class="img-fluid page5-img">
         </div>
       </div>
-
-
+  
     </div>
   </div>
+  
 
   <!-- footer -->
 
-  <footer class="mb-lg-4">
+  <footer>
     <div class="container-fluid">
       <div class="row">
 
@@ -207,7 +200,7 @@
           <div class="subscribe-btn d-flex">
             <input type="email" class="form-control" id="inputEmail4" placeholder="Email" required
               style="width: 50%; margin-right: 1rem;">
-            <button type="submit" class="btn btn-primary">Subscribe</button>
+            <button type="submit" class="btn btn-success">Subscribe</button>
           </div>
         </div>
 

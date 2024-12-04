@@ -35,7 +35,7 @@ function redirectToDetail(itemId) {
         <h2 id="spname">
         ${item.name}
         </h2>
-        <P id="spprice">
+        <P id="spprice">Rs 
         ${item.price}
         </P>
         <p id="sprating">
