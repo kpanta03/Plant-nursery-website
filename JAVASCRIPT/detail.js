@@ -4,7 +4,7 @@
 // Buy now button's code
 function redirectToDetail(itemId) {
     // Redirect to item detail page with query parameter
-    window.location.href = `Itemdetail.html?id=${itemId}`;
+    window.location.href = `./HTML/Itemdetail.html?id=${itemId}`;
   }
 
    // Function to get query parameters
