@@ -16,7 +16,7 @@
         $address=$_POST['address'];
         $comment=$_POST['comment'];
 
-        $sql="insert into userinfo(name,email,address,comment) values('$name','$email','$address','$comment')";
+        $sql="insert into usermessage(name,email,address,comment) values('$name','$email','$address','$comment')";
         $result=mysqli_query($conn,$sql);
         if($result){
             echo "Inserted Successfully";

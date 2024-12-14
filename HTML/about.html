@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <script src="https://unpkg.com/feather-icons"></script>
+  <link href="https://fonts.googleapis.com/css2?family=FONT_NAME&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../CSS/index.css"> 
+  
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Great Vibes', cursive;
+                   }
+      
+      .first-page-image{
+        transform: scaleX(-1);
+       
+      }
+      .first-page{
+        margin-top:-5rem;
+      }
+      
+      .story {
+      text-align: center;
+      font-size: 1.4rem;
+      /* font-weight: 200; */
+      line-height: 1.8;
+      color:darkgreen;
+      position: relative;
+      display: inline-block;
+      padding: 20px;
+      
+
+      /* 3D effect using layers */
+      /* text-shadow: 
+         1px 1px 0 darkgreen,  
+        4px 4px 5px rgba(0, 0, 0, 0.3),
+        5px 5px 10px rgba(0, 0, 0, 0.2);
+      background: linear-gradient(to right, #66bb6a, #43a047);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      transition: transform 0.2s ease-in-out; */
+    }
+
+    /* Hover effect */
+    .story:hover {
+      transform: translateY(-5px);
+    }
+
+   
+      
+        
+    </style>
+</head>
+<body>
+
+
+<nav class="navbar navbar-expand-lg border-0" style="background-color:rgba(255, 255, 255, 0.963);">
+
+    <div class="container">
+
+      <a class="navbar-brand" href="#"><img src="../images/logo.png" class="logo"></a>
+
+      <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon "></span>
+      </button>
+
+      <div class="collapse  navbar-collapse  " id="navbarSupportedContent">
+       
+        <ul class="navbar-nav  me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="../HTML/homepage.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../HTML/Products.html">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="../HTML/about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href=" #contactus">Contact us</a>
+          </li>
+        </ul>
+
+
+        <div class="d-flex  nav-button search-container" role="search">  
+
+         <div class="search-box" id="searchBox">
+            <input
+              id="searchInput"
+              class="form-control"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+              onkeyup="searchProducts(event)"/>
+          </div>
+          <button
+            type="button"
+            class="icon-button search"
+            onclick="toggleSearch()"
+          >
+            <i data-feather="search"></i>
+          </button>
+
+          <a href="../HTML/login.html" class="profile"><button class="icon-button "><i data-feather="user"></i></button></a>
+
+          <a href="../HTML/Cart.html" class="icon-button cart" >
+            <i data-feather="shopping-cart"></i>
+            <span class="cart-number">0</span>
+          </a>
+
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+<div class="container-fluid first-page" > 
+<div class="row"  >
+  <div class="col-md-6 first-page-image" >
+    <img src="../images/first-page.gif" alt="flowers" class="img-fluid">
+  </div>
+
+  <div class="col-md-6 d-flex justify-center align-items-center">
+    <h1 >Our Journey Towards Garden Glow</h1>
+  </div>
+  
+
+</div> 
+  
+</div>
+
+<h2 style="text-align: center; margin:4rem 0rem;">Her Garden, His Dream</h2>
+
+<div class="container second-page" style="background-color:#f0f8f0;">
+    <div class="row">
+      <div class="col-lg-7" style="text-align: center; margin: auto;">
+      <p class="text-center story" style="margin: auto;">She always believed there was magic in the soil. As a little girl, she loved wandering through the woods near her home.</p>
+        <p class="text-center story"> The sunlight would shine through the trees, and tiny wildflowers would bloom all around. To her, it felt like the plants were alive, sharing secrets only she could understand.</p>  
+   </div>
+
+   <div class="col-lg-5 text-center story" >
+    <img src="../images/second-page.png" alt="" class="img-fluid">
+   </div>
+</div>
+
+
+  </div>
+
+  <div class="container third-page">
+    <div class="row">
+   <div class="col-lg-5 text-center story" >
+    <img src="../images/third-page.png" alt="" class="first-page-image img-fluid">
+   </div>
+   <div class="col-lg-7" style="text-align: center; margin: auto;">
+    <p class="text-center story" style="margin: auto;">Once, she found a small, weak sapling under a fallen branch. It looked like it might not survive, but she saw hope in it.</p>
+    <p class="text-center story" style="margin: auto;">She took it home and planted it in the softest soil she could find. Every day, she cared for it—watering it, talking to it, and watching it grow. Slowly, the sapling grew stronger, stretching its leaves toward the sun.</p>
+
+       
+ </div>
+
+</div>
+
+
+  </div>
+
+  <div class="container fourth-page" style="background-color:#F0F8F0;">
+    <div class="row">
+      <div class="col-lg-7" style="text-align: center; margin: auto;">
+      <p class="text-center story" style="margin: auto;">That little sapling changed her life. It showed her that even the smallest seeds could grow into something amazing with love and care. From then on, she fell in love with plants and found her greatest happiness in taking care of them.</p>
+   </div>
+
+   <div class="col-lg-5 text-center story" >
+    <img src="../images/fourth-page.png" alt="" class="first-page-image img-fluid">
+   </div>
+</div>
+
+
+  </div>
+
+  <div class="container fifth-page">
+    <div class="row">
+   <div class="col-lg-5 text-center story" >
+    <img src="../images/fifth-page.gif" alt="" class="first-page-image img-fluid">
+   </div>
+   <div class="col-lg-7" style="text-align: center; margin: auto;">
+    <p class="text-center story" style="margin: auto;">She dreamed of creating a place where others could feel the same magic she did. A place where plants weren’t just bought and sold but loved and cherished. She wanted to show people the beauty of nature and the life in every leaf and petal.</p>
+ </div>
+
+</div>
+
+
+  </div>
+
+  <div class="container sixth-page" style="background-color:#F0F8F0;">
+    <div class="row">
+      <div class="col-lg-7" style="text-align: center; margin: auto;">
+      <p class="text-center story" style="margin: auto;">Though she’s no longer here, her dream lives on in this nursery. Every plant here carries her spirit, grown with the same care and love she gave that first sapling. This nursery isn’t just a business—it’s her legacy, her gift to the world.</p>
+   </div>
+
+   <div class="col-lg-5 text-center story" >
+    <img src="../images/sixth-page.png" alt="" class="first-page-image img-fluid">
+   </div>
+</div>
+
+
+  </div>
+
+  <div class="container seventh-page"  >
+    <div class="row">
+   <div class="col-lg-5 text-center story" >
+    <img src="../seventh-page.png" alt="" class=" img-fluid">
+   </div>
+   <div class="col-lg-7" style="text-align: center; margin: auto;">
+    <h3 style="margin: auto;">Welcome to her world of green, where every plant has a purpose, and every leaf tells a story.
+    </h3>
+    <p style="text-align: end; margin-top: 1rem;">Forever yours,</p>
+    <p style="text-align: end; margin-top: -1rem;">Kuka</p>
+
+ </div>
+
+</div>
+
+
+  </div>
+
+<!-- contact -->
+  <div class="page5" id="contactus">
+    <div class="container-fluid">
+  
+      <div class="row">
+  
+        <div class="col-11 col-lg-7" style="padding:1rem;">
+          <h5>GET IN TOUCH</h5>
+          <P style="color: grey;">send us a message, we will call back later</P>
+  
+          <form class="row g-3 needs-validation" style=" margin-top:-1rem; " action="../contact.php" method="POST" >   
+            <div class=" form-floating  col-md-6" style="height:3rem;">
+              <input type="text" class="form-control" id="inputName" name="name" placeholder="Name" required >
+              <label for="inputName ">Name</label>
+         
+            </div>
+      
+            <div class=" form-floating col-md-6">
+             
+              <input type="email" class="form-control" id="inputEmail4" name="email" placeholder="Email" required >
+              <label for="inputEmail4">Email</label>
+            </div>
+      
+            
+            <div class=" form-floating  col-12" >
+              <input type="text" class="form-control" id="inputAddress" name="address" placeholder="1234 Main St">
+              <label for="inputAddress">Address</label>
+            </div>
+      
+      
+            <div class=" col-12 form-floating">
+              <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"  name="comment" ></textarea>
+              <label for="floatingTextarea">Comments</label>
+            </div>
+            
+           
+            <div class="col-12">
+              <button type="submit" class="btn btn-success" name="submit">Send Message</button>
+            </div>
+          </form>
+        </div>
+  
+        <div class="col-5 d-none d-lg-flex">
+             <img src="../images/page5.png" alt=".." class="img-fluid page5-img">
+        </div>
+      </div>
+  
+    </div>
+  </div>
+
+  <!-- footer -->
+
+<footer>
+  <div class="container-fluid">
+    <div class="row">
+
+      <div class=" col-6 col-lg-3 d-flex flex-column justify-content-center align-items-center me-lg-5 p-4 ">
+        <img src="../images/logo.png" alt="logo" class="logo" style="height: 120px;">
+        <p class="text-center">Our gardens are more than just collection of plants; they're living works of art</p>
+        <div class="medias">
+          <a href="#"> <i class="bi bi-facebook icon"></i></a>
+          <a href="#"> <i class="bi bi-instagram icon"></i></a>
+          <a href="#"> <i class="bi bi-tiktok icon"></i></a>   
+        </div>
+      </div>
+
+      <div class="col-6 col-lg-3 d-flex flex-column justify-content-center mt-lg-4 me-lg-5 p-4" >
+        <h5>Subscribe to our news</h5>
+        <p>Subscribe our channel to get update about new products.</p>
+         <div class="subscribe-btn d-flex">
+          <input type="email" class="form-control" id="inputEmail4" placeholder="Email" required style="width: 50%; margin-right: 1rem;">
+          <button type="submit" class="btn btn-success">Subscribe</button>     
+         </div>
+      </div>
+
+      <div class="col-6 col-lg-2 d-flex flex-column justify-content-center mt-lg-5 me-lg-5 p-4 p-lg-0">
+        <h5>Our information</h5>
+        <p>privacy</p>
+        <p>user Terms & condition</p>
+        <p>Return Policy</p>
+      </div>
+
+
+      <div class="col-6 col-lg-2 d-flex flex-column justify-content-center mt-lg-5 p-4">
+          <h5>Contact info</h5>
+          <p>+977 9843233553</p>
+          <p>gardenglow@gmail.com</p>
+      </div>
+
+
+
+
+      </div>
+      
+
+
+    </div>
+  
+</footer>
+
+
+
+  
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../JAVASCRIPT/index.js"></script>
+<script src="../JAVASCRIPT/search.js"></script>
+<script src="../JAVASCRIPT/homepagefilter.js"></script>
+ <script src="../JAVASCRIPT/detail.js"></script>  
+ <script src="../JAVASCRIPT/updateCartNumber.js"></script>
+ <script src="../JAVASCRIPT/addToCart.js"></script>
+<script src="../JAVASCRIPT/scrollproducts.js"></script> 
+
+
+  
+    
+</body>
+</html>

@@ -9,10 +9,12 @@
   --second-bg-color: white;
   --text-color: #white;
   --secondary-text-color: black;
-  --main-color: #F0F8F0;
+  /* --main-color:#D4EED4; */
+  /* --main-color:#D8E9D3; */
+  --main-color:#F0F8F0;
   --button-color: #254211;
   --box-color: #4F7942;
-  --footer-color: #61462f17;
+  --footer-color:#a9a97e3b;
 
 
 }
@@ -435,20 +437,15 @@ form .form-control:focus {
 
 .service-card {
   background-color: #f5f9f4;
-  /* Soft green-tinted background */
   color: #2e5939;
-  /* Deep green for text */
   border-radius: 16px;
-  /* Rounded corners for a natural look */
   text-align: center;
   padding: 20px 25px;
   width: 100%;
   max-width: 320px;
   margin: 1rem auto;
   border: 1px solid #d4e7d0;
-  /* Light green border */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  /* Subtle shadow for depth */
   transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
   overflow: hidden;
   position: relative;
@@ -456,11 +453,9 @@ form .form-control:focus {
 
 .service-card:hover {
   transform: translateY(-6px);
-  /* Gentle lift */
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
-  /* Enhanced shadow on hover */
   border-color: #86c78f;
-  /* Darker green border on hover */
+ 
 }
 
 /* Decorative leaf icon or pattern */
@@ -471,10 +466,7 @@ form .form-control:focus {
   left: 10px;
   width: 50px;
   height: 50px;
-  background: url('https://www.svgrepo.com/show/134215/leaf.svg') no-repeat center;
-  background-size: contain;
   opacity: 0.2;
-  /* Subtle, semi-transparent decorative element */
   pointer-events: none;
 }
 
@@ -790,7 +782,7 @@ button {
 }
 
 
-@media (max-width:576px) {
+@media (max-width:992px) {
 
   /* navigation */
   .navbar-nav {
@@ -801,9 +793,24 @@ button {
   }
 
   .navbar-collapse {
-    background-color: transparent;
-    /* width: 20%; */
+    background: rgba(255, 255, 255, 0.9); 
+    backdrop-filter: blur(5px); 
+    z-index: 1050;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s ease;
   }
+
+.cart{
+  position: relative;
+}
+
+.cart-number {
+  top:80%;
+  left:15px;
+}
+  
 
   .nav-item {
     font-size: 0.9rem;
@@ -847,6 +854,7 @@ button {
     padding: 10px;
     font-size: 0.9em;
   }
+
 
 
 }
