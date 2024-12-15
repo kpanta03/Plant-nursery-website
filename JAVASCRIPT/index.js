@@ -5,7 +5,7 @@ feather.replace();
 const items = [
     {
       id: 1,
-      image: "../images/peacelily.png",
+      image: "https://www.avasflowers.net/img/prod_img/avasflowers-peace-lily-plant-as-shown-10221.png",
       category: ["Indoor Plant"],
       name: "PEACE LILY",
       price: 200,
