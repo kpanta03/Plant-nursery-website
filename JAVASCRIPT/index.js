@@ -5,7 +5,7 @@ feather.replace();
 const items = [
     {
       id: 1,
-      image: "../images/peacelily.png",
+      image: "images/peacelily.png",
       category: ["Indoor Plant"],
       name: "PEACE LILY",
       price: 200,
